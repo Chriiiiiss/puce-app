@@ -9,6 +9,11 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.title {
+    margin-top: 60px;
+}
+
 .title-text {
     display: flex;
     justify-content: center;
@@ -45,7 +50,16 @@ Form Style
 
 *********/
 
-form {
+.form-login {
+    width: 575px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+
+.form-register {
     width: 575px;
     height: 545px;
     display: flex;
@@ -55,6 +69,10 @@ form {
 
 div.form-label {
     margin-bottom: -40px;
+    position: relative;
+}
+
+div.form-label-login {
     position: relative;
 }
 
@@ -130,7 +148,6 @@ Submit Button
     font-family: var(--futura-book);
     font-size: 30px;
     transition: all .4s ease;
-
 }
 
 .login-button:hover {
@@ -164,6 +181,10 @@ Form Positioning
     text-align: center;
 }
 
+.form-item-login {
+    margin-top: -30px;
+}
+
 /********
 
 Form Positioning
@@ -194,4 +215,26 @@ Form Positioning
     top: 75%;
     font-size: 15px;
     pointer-events: none;
+}
+
+/********
+
+form-container-login idk
+
+********/
+
+.form-container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.dumb {
+    float: right;
+    font-family: var(--futura-book);
+    font-weight: var(--font-weight-book);
+    font-style: var(--font-style--book);
+    font-size: 25px;
+    color: var(--chocolate);
 }

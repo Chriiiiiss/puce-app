@@ -9,11 +9,11 @@ Root Element
     --chocolate: #E4572E;
     --dark-slate-gray: #2B2D42;
     --medium-purple: #9B7EDE;
-    --futura-book: futura-pt-condensed,sans-serif;
+    --futura-book: futura-pt,sans-serif;
     --font-weight-book: 400;
     --font-style--book: normal;
     --futura-demi: futura-pt, sans-serif;
-    --font-weight-demi: 600;
+    --font-weight-demi: 550;
     --font-style-demi: normal;
 }
 
@@ -51,7 +51,7 @@ body{
     align-items: flex-start;
 }
 .nav-line {
-    width: 1440px;
+    width: 100%;
     height: 1px;
     background-color: var(--transparent-dark-slate-gray);
 }

@@ -1,18 +1,18 @@
 <?php require_once("tpl/header.php"); ?>
-<div class="title">
-<div class="main-title">
-    <h1 class="title-text">
-        Créer votre compte
-        <strong class="title-emphasis-2">PUCE</strong>
-    </h1>
-    <p class="subtile">
-        Vous avez déjà un compte ?
-        <a class="subtile-emphasis-2" href= "#">Connectez-vous</a>
-    </p>
-</div>
+<div>
+    <div class="main-title">
+        <h1 class="title-text">
+            Créer votre compte
+            <strong class="title-emphasis-2">PUCE</strong>
+        </h1>
+        <p class="subtile">
+            Vous avez déjà un compte ?
+            <a class="subtile-emphasis-2" href= "login.php">Connectez-vous</a>
+        </p>
+    </div>
 </div>
 <div class="form-container">
-    <form action="register_process.php" method="post">
+    <form class="form-register" action="register_process.php" method="post">
         <div class="form-label">
             <label class="label-text" for="username">Nom d'utilisateur</label>
             <input class="form-style" name="username" type="text" required>

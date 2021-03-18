@@ -1,5 +1,4 @@
 <?php
-session_start();
-echo 'Welcome'.$_SESSION['User'];
+require_once("tpl/header.php");
 require_once("tpl/footer.php");
 ?>
