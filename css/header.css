@@ -1,0 +1,57 @@
+/********
+
+Root Element 
+
+********/
+
+:root {
+    --transparent-dark-slate-gray: rgba(43, 45, 66, 0.25);
+    --chocolate: #E4572E;
+    --dark-slate-gray: #2B2D42;
+    --medium-purple: #9B7EDE;
+    --futura-book: futura-pt-condensed,sans-serif;
+    --font-weight-book: 400;
+    --font-style--book: normal;
+    --futura-demi: futura-pt, sans-serif;
+    --font-weight-demi: 600;
+    --font-style-demi: normal;
+}
+
+body{
+    margin: 0;
+}
+
+/********
+
+   Nav
+
+********/
+
+.nav-link {
+    width: 171px;
+    height: 58px;
+}
+
+.logo{
+    width: inherit;
+    height: inherit;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.flex-wrapper-one {
+    background-color: var(--white);
+    margin-bottom: 1px;
+    padding: 23px 1137px 18px 132px;
+    display: flex;
+    align-items: flex-start;
+}
+.nav-line {
+    width: 1440px;
+    height: 1px;
+    background-color: var(--transparent-dark-slate-gray);
+}

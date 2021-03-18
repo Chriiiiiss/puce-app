@@ -1,0 +1,197 @@
+/********
+
+  Title
+
+********/
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: var(--futura-demi);
+    font-size: 50px;
+    font-weight: var(--font-weight-demi);
+    line-height: var(--font-style-demi);
+    color: var(--dark-slate-gray);
+}
+.title-emphasis-2 {
+    margin-left: 10px;
+    color: var(--medium-purple);
+}
+.subtile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--futura-demi);
+    font-size: 25px;
+    font-weight: var(--font-weight-book);
+    line-height: var(--font-style--book);
+    color: var(--black);
+}
+.subtile-emphasis-2 {
+    margin-left: 10px;
+    color: var(--chocolate);
+}
+
+/*********
+
+Form Style
+
+*********/
+
+form {
+    width: 575px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.form-label {
+    margin-bottom: -40px;
+    position: relative;
+}
+
+.label-text {
+    position: absolute;
+    left:26px;
+	top:10px;
+    color:#bbb;
+    transition: all .4s ease;
+    font-family: var(--futura-book);
+    font-weight: var(--font-weight-book);
+    font-style: var(--font-style--book);
+    font-size: 30px;
+    pointer-events: none;
+}
+
+input:focus + label {
+    top: -22px;
+    left:26px;
+    background-color: red;
+    padding: 0 5%;
+    font-size: 14px;
+    color: var(--medium-purple)
+}
+
+.form-style {
+    color: var(--medium-purple);
+    display: block;
+    width: 90%;
+    height: 48px;
+    padding: 5px 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: white;
+    font-family: var(--futura-book);
+    font-weight: var(--font-weight-book);
+    font-style: var(--font-style--book);
+    font-size: 205%;
+    letter-spacing: .8px;
+}
+
+.form-style:focus{
+    outline: none;
+    border: 1px solid var(--medium-purple);
+    color: var(--medium-purple)
+}
+
+.form-top {
+    top: -18.5px;
+    font-size: 25px !important;
+    padding: 0 2%;
+    width: auto;
+    color: var(--medium-purple) !important;
+    background-color: white;
+}
+
+/********
+
+Submit Button
+
+********/
+
+.login-button {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: var(--chocolate);
+    border: none;
+    color: #fff;
+    font-weight: var(--font-weight-book);
+    font-family: var(--futura-book);
+    font-size: 30px;
+    transition: all .4s ease;
+
+}
+
+.login-button:hover {
+    background-color: white;
+    border: 1px solid var(--chocolate);
+    color: var(--chocolate);
+
+}
+
+.login-button:focus{
+    outline: none;
+}
+
+/********
+
+Form Positioning
+
+********/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-item p {
+    font-family: var(--futura-book);
+    font-weight: var(--font-weight-book);
+    font-style: var(--font-style--book);
+    font-size: 20px;
+    color: var(--transparent-dark-slate-gray);
+    text-align: center;
+}
+
+/********
+
+Form Positioning
+
+********/
+
+.main-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Error Handling */
+
+
+.error_handling {
+    color: var(--chocolate);
+    font-family: var(--futura-book);
+    font-weight: var(--font-weight-book);
+    font-style: var(--font-style--book);
+}
+
+.error_handling p {
+    position: absolute;
+    top: 75%;
+    font-size: 15px;
+    pointer-events: none;
+}
