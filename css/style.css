@@ -1,15 +1,15 @@
 @font-face{
     font-family: "FuturaPTBook";
-    src: url(font/FuturaPTBook.otf);
+    src: url(../font/FuturaPTBook.otf);
 }
 @font-face{
     font-family: "FuturaPTDemi";
-    src: url(font/FuturaPTDemi.otf);
+    src: url(../font/FuturaPTDemi.otf);
 }
 
 @font-face{
     font-family: "FuturaPTLight";
-    src: url(font/FuturaPTLight.otf);
+    src: url(../font/FuturaPTLight.otf);
 }
 html,
 body
@@ -38,8 +38,7 @@ a
 
 .navbar
 {
-    position: sticky;
-    top:0;
+
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -74,6 +73,12 @@ header .navbar .connexion:hover
     font-family: FuturaPTDemi;
     color:#9B7EDE;
     transition-duration: 0.60s;
+}
+
+.profilePic img 
+{
+    width: 45px;
+
 }
 
 header .navbar .inscriptionNav
@@ -131,7 +136,7 @@ header .navbar .inscriptionNav:hover
 
 .inscription
 {
-    font-size: 25px;
+    font-size: 1.5vw;
     background: #E4572E;
     color: #FFFFFF;
     border-radius: 5px;
@@ -175,7 +180,7 @@ header .navbar .inscriptionNav:hover
 
 .input 
 {
-    width: 800px;
+    width: 70vw;
     height: 50px;
     margin-right: 15px ;
     padding: 0 12px;
@@ -189,13 +194,9 @@ header .navbar .inscriptionNav:hover
     color: #aca9a9;
     outline: none;
 }
-.input:focus
-{
-  box-shadow: 0px 0px 8px 3px #9B7EDE;
-}
 .submit
 {
-    width: 280px;
+    width: 15vw;
     height: 57px;
     margin-left: 15px ;
     padding: 0 12px;
@@ -305,6 +306,26 @@ footer
     color:#EDEDED;
 
 }
+
+.purpleButton
+{
+    font-size: 2vw;
+    background: #9B7EDE;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding:10px 50px;
+}
+
+.purpleButton:hover
+{
+    background:#FFFFFF;
+    color: #9B7EDE;
+    border: solid 2px#9B7EDE;
+    border-radius: 5px;
+    padding:9px 40px;
+    transition-duration: 0.40s;
+}
+
 
 .vector
 {
