@@ -174,13 +174,13 @@ header .navbar .inscriptionNav:hover
     background-color:#2B2D42;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    flex-wrap:wrap;
 }
 
 
 .input 
 {
-    width: 70vw;
+    width: 800px;
     height: 50px;
     margin-right: 15px ;
     padding: 0 12px;
@@ -196,7 +196,7 @@ header .navbar .inscriptionNav:hover
 }
 .submit
 {
-    width: 15vw;
+    width: 270px;
     height: 57px;
     margin-left: 15px ;
     padding: 0 12px;
@@ -235,27 +235,57 @@ header .navbar .inscriptionNav:hover
     flex-direction: column;
 
 }
-
-.block1, .block2, .block3, .block4
-{
-    margin-top: 10px;
-    display: flex;
-}
-.block1, .block3
-{
-    padding-right: 220px;
-
-}
-.block2, .block4
-{
-    text-align: end;
-    padding-left: 220px;
+.container2 span{
+    display: none;
 }
 
-.block2 span, .block4 span
-{
+@media only screen and (min-width: 720px) {
+    .block1, .block2, .block3, .block4{ 
+        margin-top: 10px;
+        display: flex;}
+
+     .block1, .block3
+    {
+      padding-right: 220px;
+    }
+    .block2, .block4
+    {
+        text-align: end;
+        padding-left: 220px;
+    }
+    .container2 span {
+        display: block;
+    }
+    .block2 span, .block4 span
+    {
     margin-top: 30px;
+    }
+    .contact
+    {
+        font-size: 29px;
+    }
+    .number
+    {
+        font-size: 21px;
+    }
+    .social
+    {
+        font-size: 30px;
+    }
+    .logoW
+    {
+        padding-top: 25px;
+        width: 187px;
+        height: 73px;
+    } 
+    .logoI, .logoL
+    {
+        margin-left: 15px;
+
 }
+}
+ 
+
 .container2 span
 {
     font-family: FuturaPTDemi;
@@ -301,10 +331,12 @@ header .navbar .inscriptionNav:hover
     letter-spacing: 0.2rem;
 }
 
-footer
-{
+.footer {
+    background-color:#9B7EDE;
     color:#EDEDED;
-
+}
+svg {
+    display: block;
 }
 
 .purpleButton
@@ -326,45 +358,25 @@ footer
     transition-duration: 0.40s;
 }
 
-
-.vector
-{
-    
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
 .contact
 {
     text-transform: uppercase;
     font-family: FuturaPTDemi;
     font-weight: 500;
-    font-size: 29px;
-}
-.number
-{
-    font-size: 21px;
-
 }
 
-.social
-{
-    font-size: 30px;
-}
+
+
 
 .rectangle
 {
     width: 100%;
 
 }
-
 .footerLinks
 {
-    padding-top: 245px;
     display: flex;
     justify-content: space-around;
-
 }
 
 .footerText
@@ -372,16 +384,36 @@ footer
     text-align: center;
 
 }
-.logoW
+@media only screen and (max-width: 720px) {
+    .logoW
 {
-    padding-top: 25px;
-    width: 187px;
-    height: 73px;
+    padding-top: 30px;
+    width: 110px;
+    height: 50px;
 }
-
+.logoF
+{
+    width: 30px;  
+    margin-left: 15px;
+}
 
 .logoI, .logoL
 {
+    width: 30px;
     margin-left: 15px;
+
+}
+.number
+{
+    font-size: 13px;
+}
+.social
+{
+    font-size: 20px;
+}
+.contact
+{
+    font-size: 20px;
+}
 
 }
