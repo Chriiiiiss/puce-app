@@ -2,7 +2,7 @@
 session_start();
 $id_session = session_id();
 
-if($id_session) {
+if(isset($_SESSION['user'])) {
     header("welcome.php");
 }
 
@@ -28,11 +28,25 @@ if($id_session) {
                     <img src="img/logo.jpg" class="logo" alt="logo puce">
                     </a>
                     <ul class=links>
-                        <li><a href="login.php" class="connexion">Connexion</a></li>
-                        <li><a href="register.php" class="inscriptionNav">Inscription</a></li>
+                        <?php 
+                            if (isset($_SESSION['user'])) {
+                                echo 
+                                '
+                                <a href="logout.php" class="connexion">Deconnexion</a>
+                                <a href="#" class="profilePic">
+                                    <img src="img/profilePic.png" >
+                                </a>
+                                ';
+                            } else {
+                                echo 
+                                '
+                                <li><a href="login.php" class="connexion">Connexion</a></li>
+                                <li><a href="register.php" class="inscriptionNav">Inscription</a></li>
+                                ';
+                            }
+                        ?>
                     </ul >
                 </div>
                 <div class="nav-line"></div>
             </header>
         </div>
-<?php var_dump($_SESSION) ?>

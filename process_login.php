@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 try {
     $bdd = new PDO("mysql:host=localhost;dbname=puce_db;charset:utf8","root","root");
 } catch (Exception $e)
@@ -15,7 +17,8 @@ if(isset($_POST["password"]) && isset($_POST["username"])) {
         if ($row["password"] != $_POST["password"]) {
             header("location:login.php?Error= Nom d'utilisateur / e-mail ou mot de passe incorrect");
         } else {
-            header("location:welcome.php");
+            $_SESSION["user"] = $_POST["username"];
+            header("location:index.php");
         }
     } else {
         header("location:login.php?Error= Nom d'utilisateur / e-mail ou mot de passe incorrect");
