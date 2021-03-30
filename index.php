@@ -1,5 +1,6 @@
 <?php require_once("./tpl/header.php"); ?>
-        <div class="section1">
+    <div class="container">
+    <div class="section1">
             <div class="text">
                 <h1>Votre URL, aussi petit qu'une <span>PUCE</span></h1>
                 <h2>Simplifier vos liens et suivez leur statistiques en un clic !</h2>
@@ -9,6 +10,7 @@
             </div>
             <img src="img/illu1.png" class="illu" alt="illustation de puce">
         </div>
+    </div>
         <div class=section2>
             <div class="form">
                 <form>
