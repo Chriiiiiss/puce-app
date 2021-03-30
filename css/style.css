@@ -33,7 +33,11 @@ a
 .container
 {
     width: 75vw;
-    margin: 40px auto;
+    margin: 35px auto;
+    background-image: url(../img/illu1.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right
 }
 
 .navbar
@@ -41,7 +45,6 @@ a
 
     display: flex;
     justify-content: space-between;
-    z-index: 1;
 }
 
 
@@ -109,7 +112,6 @@ header .navbar .inscriptionNav:hover
 .text
 {
     width:60vw;
-    height: 280px
 
 }
 
@@ -136,7 +138,7 @@ header .navbar .inscriptionNav:hover
 
 .inscription
 {
-    font-size: 1.5vw;
+    font-size: 20px;
     background: #E4572E;
     color: #FFFFFF;
     border-radius: 5px;
@@ -159,22 +161,16 @@ header .navbar .inscriptionNav:hover
     margin-left: 262px;
 }
 
-.section1 img
-{
-    position: absolute;
-    top:160px;
-    left:735px;
-}
+
 
 .section2{
-    position: absolute;
     width: 100%;
     height: 143px;
     top: 527px;
     background-color:#2B2D42;
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    align-items: center;
 }
 
 
@@ -240,6 +236,7 @@ header .navbar .inscriptionNav:hover
 }
 
 @media only screen and (min-width: 720px) {
+
     .block1, .block2, .block3, .block4{ 
         margin-top: 10px;
         display: flex;}
@@ -258,7 +255,7 @@ header .navbar .inscriptionNav:hover
     }
     .block2 span, .block4 span
     {
-    margin-top: 30px;
+        margin-top: 30px;
     }
     .contact
     {
@@ -281,8 +278,7 @@ header .navbar .inscriptionNav:hover
     .logoI, .logoL
     {
         margin-left: 15px;
-
-}
+    }
 }
  
 
@@ -384,36 +380,63 @@ svg {
     text-align: center;
 
 }
+@media only screen and (max-width: 1141px) {
+    .input 
+    {
+    width: 500px;}   
+}
+@media only screen and (max-width: 840px) {
+    .input 
+    {
+    width: 350px;
+    }   
+    .submit
+    {
+        width: 140px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .input 
+    {
+
+        padding-top: 12px;
+        width: 300px;
+    }   
+    .submit
+    {
+        width: 140px;
+    }
+}
 @media only screen and (max-width: 720px) {
     .logoW
-{
-    padding-top: 30px;
-    width: 110px;
-    height: 50px;
-}
-.logoF
-{
-    width: 30px;  
-    margin-left: 15px;
-}
+    {
+        padding-top: 30px;
+        width: 110px;
+        height: 50px;
+    }
+    .logoF
+    {
+        width: 30px;  
+        margin-left: 15px;
+    }
 
-.logoI, .logoL
-{
-    width: 30px;
-    margin-left: 15px;
+    .logoI, .logoL
+    {
+        width: 30px;
+        margin-left: 15px;
 
-}
-.number
-{
-    font-size: 13px;
-}
-.social
-{
-    font-size: 20px;
-}
-.contact
-{
-    font-size: 20px;
-}
+    }
+    .number
+    {
+        font-size: 13px;
+    }
+    .social
+    {
+        font-size: 20px;
+    }
+    .contact
+    {
+        font-size: 20px;
+    }
 
 }

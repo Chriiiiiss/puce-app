@@ -8,7 +8,6 @@
                     <a href="./register.php" class="inscription">Inscription</a>
                 </div>
             </div>
-            <img src="img/illu1.png" class="illu" alt="illustation de puce">
         </div>
     </div>
         <div class=section2>
