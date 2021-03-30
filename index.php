@@ -5,7 +5,7 @@
                 <h1>Votre URL, aussi petit qu'une <span>PUCE</span></h1>
                 <h2>Simplifier vos liens et suivez leur statistiques en un clic !</h2>
                 <div class="inscriptionButton">
-                    <a href="#" class="inscription">Inscription</a>
+                    <a href="./register.php" class="inscription">Inscription</a>
                 </div>
             </div>
             <img src="img/illu1.png" class="illu" alt="illustation de puce">
@@ -58,7 +58,7 @@
 
                 <h4>Alors n’hésitez plus !</h4>
                 <div class="inscriptionButton">
-                    <a href="#" class="inscription">Inscription</a>
+                    <a href="./register.php" class="inscription">Inscription</a>
                 </div>
             </div>
         </div>
