@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/rsj3hrt.css">
-    <link rel="stylesheet" href="./css/headers.css">
-    <link rel="stylesheet" href="./css/register.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title>bookstrap_rac</title>
-</head>
-<body>
-    <div class="nav">
-    <div class="flex-wrapper-one">
-        <a class="nav-link" href="./index.php">
-            <img
-            class="logo"
-            alt="puce_logo"
-            src="./img/puce.svg"
-            />
-        </a>
-    </div>
-    <div class="nav-line"></div>
-    </div>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puce</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/headers.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/register.css">
+        <link href="font/FuturaPTBook.otf">
+        <link href="font/FuturaPTDemi.otf">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="navbar">
+                    <a href="./index.php">
+                    <img src="img/logo.jpg" class="logo" alt="logo puce">
+                    </a>
+                    <ul class=links>
+                        <li><a href="login.php" class="connexion">Connexion</a></li>
+                        <li><a href="register.php" class="inscriptionNav">Inscription</a></li>
+                    </ul >
+                </div>
+                <div class="nav-line"></div>
+            </header>
+        </div>
