@@ -29,5 +29,6 @@
         </p>
     </div>
 </footer> 
+<script src="./js/ind.js"></script>
 </body>
 </html>
