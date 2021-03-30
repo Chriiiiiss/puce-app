@@ -64,3 +64,5 @@
         </div>
     </body>
 </html>
+
+<?php require_once("./tpl/footer.php"); ?>
