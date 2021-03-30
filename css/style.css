@@ -33,11 +33,8 @@ a
 .container
 {
     width: 75vw;
-    margin: 35px auto;
-    background-image: url(../img/illu1.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: right
+    margin: 35px auto 0 auto;
+
 }
 
 .navbar
@@ -106,6 +103,13 @@ header .navbar .inscriptionNav:hover
 {
     margin-top: 135px;
     color:#2B2D42;
+    display: flex;
+    background-image: url(../img/illu1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
 }
 
 
@@ -161,6 +165,11 @@ header .navbar .inscriptionNav:hover
     margin-left: 262px;
 }
 
+.background{
+   
+    height: 405px;
+
+}
 
 
 .section2{

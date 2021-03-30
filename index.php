@@ -15,6 +15,8 @@
                     ?>
                 </div>
             </div>
+            <div class="background">
+            </div>
         </div>
     </div>
         <div class=section2>
