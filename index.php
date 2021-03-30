@@ -1,11 +1,18 @@
 <?php require_once("./tpl/header.php"); ?>
+
     <div class="container">
-    <div class="section1">
+        <div class="section1">
             <div class="text">
                 <h1>Votre URL, aussi petit qu'une <span>PUCE</span></h1>
                 <h2>Simplifier vos liens et suivez leur statistiques en un clic !</h2>
                 <div class="inscriptionButton">
-                    <a href="./register.php" class="inscription">Inscription</a>
+                    <?php 
+                        if (isset($_SESSION['user'])) {
+                            echo "<a href='#' class='inscription'>Mes statistiques</a>";
+                        } else {
+                            echo "<a href='./register.php' class='inscription'>Inscription</a>";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -54,11 +61,25 @@
                     </div>
                     <span>4</span>
                 </div>
-
-                <h4>Alors n’hésitez plus !</h4>
-                <div class="inscriptionButton">
-                    <a href="./register.php" class="inscription">Inscription</a>
-                </div>
+                <?php 
+                    if (isset($_SESSION['user'])) {
+                        echo 
+                        '
+                        <div class="inscriptionButton">
+                            <a href="#" class="purpleButton">Gérer mes liens</a>
+                        </div>
+                        ';
+                    } else {
+                        echo 
+                        '
+                        <h4>Alors n’hésitez plus !</h4>
+                        <div class="inscriptionButton">
+                            <a href="./register.php" class="inscription">Inscription</a>
+                        </div>
+                        ';
+                    }
+                
+                ?>
             </div>
         </div>
     </body>
