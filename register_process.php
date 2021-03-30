@@ -1,5 +1,8 @@
 <?php
 
+require_once "connection_db.php";
+
+
 if(isset($_POST["password"])) {
     if ($_POST["password"] != $_POST["passwordconf"]) {
         header("location:register.php?Errorwp= Vos passwords ne sont pas identiques");
@@ -10,13 +13,6 @@ if(isset($_POST["password"])) {
     exit;
 }
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=puce_db;charset:utf8","root","root");
-} catch (Exception $e)
-{ 
-    die("Erreur : ". $e->getMessage()); 
-}
-
 // function checkDb($bdd, $string) {
 //     $req = $bdd->
 // }
@@ -24,8 +20,8 @@ try {
 $req = $bdd->prepare("INSERT INTO account_puce(username, password, email) VALUES(:username, :password, :email)");
 
 $req->bindValue(":username", $_POST["username"]);
-$req->bindParam(":password", $_POST["password"]);
-$req->bindParam(":email", $_POST["email"]);
+$req->bindValue(":password", $_POST["password"]);
+$req->bindValue(":email", $_POST["email"]);
 if($req->execute()) {
     header("location:index.php?Welcome = Bienvenu");
     exit;

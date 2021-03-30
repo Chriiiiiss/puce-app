@@ -2,12 +2,7 @@
 
 session_start();
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=puce_db;charset:utf8","root","root");
-} catch (Exception $e)
-{ 
-    die("Erreur : ". $e->getMessage()); 
-}
+require_once "./connection_db.php";
 
 if(isset($_POST["password"]) && isset($_POST["username"])) {
     $req = $bdd->prepare("SELECT * FROM account_puce WHERE username = ?");
