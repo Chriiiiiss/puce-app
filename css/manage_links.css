@@ -100,7 +100,7 @@ hr {
 
 .link-made .long-link
 {
-    font-size: 25px;
+    font-size: 22px;
     margin: 0;
     
 }
@@ -289,7 +289,7 @@ input:checked + .slider:before {
     }
     .popUp{
         width:860px;
-        height: 120px;
+        height: 100px;
         justify-content: center;
 
     }
