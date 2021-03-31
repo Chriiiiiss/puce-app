@@ -10,6 +10,7 @@
         try {
             $url = $bdd->query("SELECT url FROM links WHERE code = '{$code}' AND activated = 1")->fetchColumn();
             if ($url) {
+                $bdd->query("UPDATE links SET clicks = clicks + 1 WHERE code = '{$code}'");
                 header("location: ".$url);
                 exit;
             } else {
@@ -111,7 +112,6 @@
                         </div>
                         ';
                     }
-                
                 ?>
             </div>
         </div>
