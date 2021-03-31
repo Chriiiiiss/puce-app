@@ -27,6 +27,7 @@ hr {
 
 .link-made
 {
+    height: inherit;
     display: flex;
     justify-content: space-between;
 }
@@ -42,17 +43,20 @@ hr {
 {
     font-size: 25px;
     margin: 0;
+    
 }
 
 .link-made .short-link
 {
     font-size: 15px;
-    margin: 10px auto 17.5px auto ;
+    /* margin: 10px auto 17.5px auto ; */
     color: #9B7EDE;
 }
 
 .link-made .number-clicks
 {
+    display: flex;
+    align-items: center;
     font-size: 35px;
     color: #E4572E;
 }
@@ -78,11 +82,192 @@ button .copy-link
 }
 
 .link-elem {
-    width: 90%;
+    width: inherit;
     height: 512px;
     overflow: scroll;
 }
 
 .link {
     height: 128px;
+}
+
+.garbage-form {
+    height: 47px;
+}
+
+.garbage {
+    width: 47px;
+    height: 47px;
+    background: none;
+    background-image: url(../img/garbage.png);
+    background-size: cover;
+    border: none;
+}
+
+.actions {
+    width: 256px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #E4572E;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #E4572E;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.cursor_img {
+    width: 27px;
+    height: 45px;
+    background-image: url(./../img/cursor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.click_container {
+    display: flex;
+}
+
+.container-links {
+    width: 75vw;
+    margin: 35px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.other-actions {
+    width: inherit;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-form {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1180px) {
+    .long-link {
+        width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .long-link {
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .other-actions {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .long-link {
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .short-link {
+        display: block;
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .number-clicks {
+        font-size: 25px !important;
+    }
+
+    .cursor_img {
+        width: 14px;
+        height: 30px;
+        background-size: contain;
+    }
+
+    .garbage-form {
+        width: 25px;
+        height: 25px;
+    }
+
+    .garbage {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .long-link {
+        width: 200px;
+    }
 }

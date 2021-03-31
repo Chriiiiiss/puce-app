@@ -22,16 +22,10 @@
     <h1 class="title-text">Gérer mes liens</h1>
 </div>
 <button class="add-link-button">+</button>
-<div class="container">
+<div class="container-links">
     <div class="category-titles">
         <p>
             <?= $links_number." lien.s" ?>
-        </p>
-        <p>
-            clic(s)
-        </p>
-        <p>
-            actions
         </p>
     </div>
     <div class="link-elem">
@@ -41,25 +35,31 @@
                 '
                     <div class= "link">
                     <hr></hr>
-                    <div>
                         <div class="link-made">
                             <div>
                                 <p class="date">'.get_date($row['creation_date']).'</p>
                                 <p class="long-link">'.$row['url'].'</p>
                                 <a href="http://'.$redirect_link.$row['code'].'"class="short-link" target="_blank">'.$redirect_link.$row['code'].'</a>
                             </div>
-                            <div class="number-clicks">'.$row['clicks'].'</div>
                             <div class="actions">
-                                <form action="delete_row.php" method="post"> 
-                                    <button type="submit" name="row_code" value="'.$row['code'].'" class="garbage">Delete</button>
-                                </form>
-                                <div class="copy-button">
-                                    <a href="#" class="copy-link">copier</a>
-                                    <button class="copy-link">copier</button>
+                                <div class="click_container"> 
+                                    <span class="number-clicks">'.$row['clicks'].'</span>
+                                    <div class="cursor_img""></div>
                                 </div>
+                            <div class="other-actions">
+                                <form class="garbage-form" action="delete_row.php" method="post"> 
+                                    <button type="submit" name="row_code" value="'.$row['code'].'" class="garbage"></button>
+                                </form>
+                                <form class="toggle-form" action="disable_link.php" method="post">
+                                <p>enable</p>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </form>
+                            </div>
                             </div>
                         </div>
-                    </div>
                 </div>
                 ';
             }
