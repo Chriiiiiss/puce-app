@@ -23,17 +23,17 @@
 </div>
 <button class="add-link-button">+</button>
 <div class="popUp">
-    <div class=section2>
+    <div class=s>
         <div class="form">
             <form action="shortener.php" method="post">
                     <?php 
                         if (isset($_GET["Shortener"])) {
-                            echo '<input value="'.$redirect_link.$_GET["Shortener"].'" localhost" name="submit_url" type="url" class="input index_input shortened" placeholder="Collez votre lien pour le simplifier">';
+                            echo '<input value="'.$redirect_link.$_GET["Shortener"].'" localhost" name="submit_url" type="url" class="inputSmall index_input shortened" placeholder="Collez votre lien pour le simplifier">';
                         } else {
-                            echo '<input name="submit_url" type="url" class="input index_input" placeholder="Collez votre lien pour le simplifier">';
+                            echo '<input name="submit_url" type="url" class="inputSmall index_input" placeholder="Collez votre lien pour le simplifier">';
                         }
                     ?>
-                    <input type="submit" value="Simplifier" class="submit" disabled>
+                    <input type="submit" value="Simplifier" class="submitSmall">
             </form>
         </div>
     </div>
