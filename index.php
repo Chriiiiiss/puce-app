@@ -24,7 +24,7 @@
                 <div class="inscriptionButton">
                     <?php 
                         if (isset($_SESSION['user'])) {
-                            echo "<a href='#' class='purpleButton'>Gérer mes liens</a>";
+                            echo "<a href='./manage_links.php' class='purpleButton'>Gérer mes liens</a>";
                         } else {
                             echo "<a href='./register.php' class='inscription'>Inscription</a>";
                         }
@@ -92,7 +92,7 @@
                         '
                         <h4></h4>
                         <div class="inscriptionButton">
-                            <a href="#" class="purpleButton">Gérer mes liens</a>
+                            <a href="./manage_links.php" class="purpleButton">Gérer mes liens</a>
                         </div>
                         ';
                     } else {
