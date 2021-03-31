@@ -28,7 +28,8 @@
             <div class="actions">
                 <img src="./img/garbage.png" class="garbage" alt="garbage can">
                 <div class="copy-button">
-                    <button class="copy-link">copier</button>
+                    <a href="#" class="copy-link">copier</a>
+                    <!-- <button class="copy-link">copier</button> -->
                 </div>
             </div>
         </div>
