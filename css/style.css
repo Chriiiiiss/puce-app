@@ -11,6 +11,7 @@
     font-family: "FuturaPTLight";
     src: url(../font/FuturaPTLight.otf);
 }
+
 html,
 body
 {
@@ -408,13 +409,13 @@ svg {
 @media only screen and (max-width: 550px) {
     .input 
     {
-        width: 300px;
+        width: 290px;
         height: 35px;
         font-size: 15px;
     }   
     .submit
     {
-        width: 140px;
+        width: 130px;
         height: 35px;
         font-size: 15px;
     }

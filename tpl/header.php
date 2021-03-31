@@ -21,32 +21,42 @@ if(isset($_SESSION['user'])) {
         <link href="font/FuturaPTDemi.otf">
     </head>
     <body>
-        <div class="container">
+        <div class="containerHeader">
             <header>
                 <div class="navbar">
                     <a href="./index.php">
                     <img src="img/logo.jpg" class="logo" alt="logo puce">
                     </a>
                     <ul class=links>
+                    <nav id="hamnav">
+                            <!-- [THE HAMBURGER] -->
+                            <label for="hamburger">&#9776;</label>
+                            <input type="checkbox" id="hamburger"/>
                         <?php 
                             if (isset($_SESSION['user'])) {
                                 echo 
                                 '
-                                <a href="logout.php" class="connexion">Deconnexion</a>
-                                <a href="#" class="profilePic">
-                                    <img src="img/profilePic.png" >
-                                </a>
+                                <div id="hamitems">
+                                    <a href="logout.php" class="connexion">Deconnexion</a>
+                                    <a href="#" class="profilePic">
+                                        <img src="img/profilePic.png" >
+                                    </a>
+                                </div>
                                 ';
                             } else {
                                 echo 
                                 '
-                                <li><a href="login.php" class="connexion">Connexion</a></li>
-                                <li><a href="register.php" class="inscriptionNav">Inscription</a></li>
+                                <div id="hamitems">
+                                    <a href="login.php" class="connexion">Connexion</a>
+                                   <a href="register.php" class="inscriptionNav">Inscription</a>
+                                </div>
                                 ';
                             }
                         ?>
+                    </nav>
                     </ul >
                 </div>
                 <div class="nav-line"></div>
             </header>
         </div>
+

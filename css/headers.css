@@ -26,7 +26,9 @@ body{
    Nav
 
 ********/
-
+.containerHeader{
+    margin: 20px;
+}
 .nav-link {
     width: 171px;
     height: 58px;
@@ -55,3 +57,62 @@ body{
     height: 1px;
     background-color: var(--transparent-dark-slate-gray);
 }
+
+
+
+ 
+ 
+  #hamnav label, #hamburger { display: none; }
+  
+
+
+  @media screen and (max-width: 768px){
+
+    #hamnav label { 
+      display: inline-block; 
+      color: var(--chocolate);
+      font-style: normal;
+      font-size: 2em;
+    }
+    header .navbar .inscriptionNav
+    {
+        background: none;
+        color:var(--chocolate);
+        padding:0px;
+        border: none;
+    }
+    header .navbar .connexion:hover
+    {
+        letter-spacing: 0.05em;
+        font-family:FuturaPTBook;
+        color: var(--medium-purple);
+        transition-duration: 0.60s;
+    }
+    header .navbar .inscriptionNav:hover
+    {
+        background:none;
+        color: var(--medium-purple);
+        border: none ;
+        padding:0px;
+        transition-duration: 0.40s;
+    }
+    #hamnav{
+
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+  
