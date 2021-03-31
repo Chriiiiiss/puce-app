@@ -72,12 +72,6 @@ hr {
 
 }
 
-.category-titles
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 .category-titles p
 {
     font-size: 20px;
