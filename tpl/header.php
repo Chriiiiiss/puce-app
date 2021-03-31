@@ -2,10 +2,6 @@
 session_start();
 $id_session = session_id();
 
-if(isset($_SESSION['user'])) {
-    header("welcome.php");
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,6 +25,14 @@ if(isset($_SESSION['user'])) {
                     <img src="img/logo.jpg" class="logo" alt="logo puce">
                     </a>
                     <ul class=links>
+                    <?php 
+                        if (isset($_SESSION['user'])) {
+                            echo 
+                            '
+                            <p> Bonjour <span class="username">'.$_SESSION['user'].'</span> !</p>
+                            ';
+                        }
+                    ?>
                     <nav id="hamnav">
                             <label for="hamburger">&#9776;</label>
                             <input type="checkbox" id="hamburger"/>
@@ -42,7 +46,7 @@ if(isset($_SESSION['user'])) {
                                         <img src="img/profilePic.png" >
                                     </a>
                                     <a href="#" class="logIn myprofile">Mon Profil</a>
-                                    </div>
+                                </div>
                                 ';
                             } else {
                                 echo 
@@ -60,4 +64,3 @@ if(isset($_SESSION['user'])) {
                 <div class="nav-line"></div>
             </header>
         </div>
-

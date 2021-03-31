@@ -124,11 +124,12 @@ header .navbar .inscriptionNav:hover
     align-items: center;
 }
 
+.username {
+    color: var(--chocolate);
+    font-weight: bold;
+}
 
-
-
-
-  #hamnav label, #hamburger { display: none; }
+#hamnav label, #hamburger { display: none; }
   
   @media screen and (min-width: 768px){
       .myprofile{
