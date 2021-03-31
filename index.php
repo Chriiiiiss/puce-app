@@ -21,9 +21,9 @@
     </div>
         <div class=section2>
             <div class="form">
-                <form>
-                    <input type="text" class="input" placeholder="Collez votre lien pour le simplifier">
-                    <input type="submit" value="Simplifier"class="submit" >
+                <form action="shortener.php" method="post">
+                    <input name="submit_url" type="url" class="input index_input" placeholder="Collez votre lien pour le simplifier">
+                    <input type="submit" value="Simplifier" class="submit" disabled>
                 </form>
                 <p class="accord">
                     En utilisant notre service, vous acceptez les conditions d’utilisation et la politique de confidentialité
@@ -84,7 +84,6 @@
                 ?>
             </div>
         </div>
-    </body>
-</html>
+<script src="./js/index.js"></script>
 
 <?php require_once("./tpl/footer.php"); ?>

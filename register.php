@@ -45,4 +45,5 @@
         </div>
     </form>
 </div>
+<script src="./js/ind.js"></script>
 <?php require_once("tpl/footer.php"); ?>
