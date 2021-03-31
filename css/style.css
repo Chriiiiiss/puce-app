@@ -180,7 +180,7 @@ a
     transition-duration: 0.40s;
     color: var(--medium-purple);
     background: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #eba6a6;
 }
 
 .accord
@@ -269,6 +269,12 @@ a
     border-radius: 5px;
     padding:9px 40px;
     transition-duration: 0.40s;
+}
+
+#hamitems 
+{
+    display: flex;
+    align-items: center;
 }
 
 
