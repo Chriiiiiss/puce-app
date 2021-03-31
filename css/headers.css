@@ -88,8 +88,6 @@ header .navbar .logIn
 }
 header .navbar .logIn:hover
 {
-    letter-spacing: 0.1em;
-    font-family: FuturaPTDemi;
     color:var(--medium-purple);
     transition-duration: 0.60s;
 }
@@ -98,7 +96,6 @@ header .navbar .logIn:hover
 .profilePic img 
 {
     width: 50px;
-
 }
 
 header .navbar .inscriptionNav

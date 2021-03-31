@@ -6,11 +6,15 @@ hr {
 .add-link-button
 {
     position: fixed;
-    width: 15vh;
-    height: 15vh;
+    width: 14vh;
+    height: 14vh;
     right: 5%;
     bottom: 5%;
-    font-size: 5vh;
+    font-size: 6vh;
+    color:#FFFFFF;
+    background: #E4572E;
+    border-radius: 75px;
+    border: solid 2px #E4572E ;
 }
 
 .category-titles
