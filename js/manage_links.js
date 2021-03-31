@@ -2,8 +2,7 @@ let checkbox = document.querySelector(".check");
 let form_checkbox = document.querySelector(".toggle-form");
 const button = document.querySelector('.add-link-button');
 const popUp = document.querySelector('.popUp');
-
-let tmp = true
+let tmp = "true"
 
 const linkButton = () => 
 {

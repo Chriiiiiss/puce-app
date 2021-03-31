@@ -259,6 +259,27 @@ input:checked + .slider:before {
 .fake-input {
     display: none;
 }
+@media only screen and (max-width: 1300px) {
+    .popUp{
+        width:1000px;
+        height: 120px;
+        justify-content: center;
+
+    }
+    .inputSmall{
+
+        width:610px;
+    }
+    .submitSmall{
+        width:230px;
+    }
+    .add-link-button{
+        width: 120px;
+        height: 120px;
+        font-size: 45px;
+    }
+    
+}
 
 @media only screen and (max-width: 1180px) {
     .long-link {
@@ -286,26 +307,24 @@ input:checked + .slider:before {
     }
     
 }
+@media only screen and (max-width: 1024px) {
+    .popUp{
+        width:800px;
+        height: 99px;
+        justify-content: center;
 
-@media only screen and (max-width: 800px) {
-    .long-link {
-        width: 350px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
+    .inputSmall{
 
-    .actions {
-        display: flex;
-        flex-direction: column;
+        width:360px;
     }
+    .submitSmall{
+        width:130px;
+    }
+    
+}
 
-    .other-actions {
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+@media only screen and (max-width: 930px){
     .popUp{
         width:600px;
         height: 120px;
@@ -327,6 +346,53 @@ input:checked + .slider:before {
         font-size: 35px;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .long-link {
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .other-actions {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+@media only screen and (max-width: 650px) {
+    .long-link {
+        width: 200px;
+    }
+
+    .add-link-button{
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    .popUp{
+        width:500px;
+        height: 120px;
+    }
+    .inputSmall{
+        width:300px;
+        height: 40px;
+    }
+    .submitSmall{
+        width:100px;
+        height: 40px;
+    }
+    
+
+
 
 @media only screen and (max-width: 375px) {
     .long-link {
@@ -364,29 +430,5 @@ input:checked + .slider:before {
         height: 25px;
     }
 }
-
-@media only screen and (max-width: 650px) {
-    .long-link {
-        width: 200px;
-    }
-
-    .add-link-button{
-        width: 80px;
-        height: 80px;
-        font-size: 30px;
-    }
-    .popUp{
-        width:500px;
-        height: 120px;
-    }
-    .inputSmall{
-        width:300px;
-        height: 40px;
-    }
-    .submitSmall{
-        width:100px;
-        height: 40px;
-    }
-    
 
 }
