@@ -259,6 +259,10 @@ input:checked + .slider:before {
     align-items: center;
 }
 
+.fake-input {
+    display: none;
+}
+
 @media only screen and (max-width: 1180px) {
     .long-link {
         width: 400px;

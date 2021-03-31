@@ -5,7 +5,7 @@
     $user = $_SESSION['user'];
 
     try {
-        $req = $bdd->prepare("SELECT url, code, clicks, creation_date FROM links WHERE user = '{$user}'");
+        $req = $bdd->prepare("SELECT url, code, clicks, creation_date, activated FROM links WHERE user = '{$user}'");
         $res = $req->execute();
         $res = $req->fetchAll();
         $links_number = count($res);
@@ -87,19 +87,45 @@
                                 <form class="garbage-form" action="delete_row.php" method="post"> 
                                     <button type="submit" name="row_code" value="'.$row['code'].'" class="garbage"></button>
                                 </form>
-                                <form class="toggle-form" action="disable_link.php" method="post">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider"></span>
-                                    </label>
-                                </form>
-                            </div>
-                            </div>
+                                ';
+                if ($row['activated']) {
+                    echo 
+                    '
+                        <form class="toggle-form" action="disable_link.php" method="post">
+                            <p>enable</p>
+                            <label class="switch">
+                                <input name="checked" class="check" type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <input name="code" class="fake-input" type="text" value="'.$row['code'].'">
+                        </form>
                         </div>
-                </div>
-                ';
-            }
+                        </div>
+                        </div>
+                        </div>
+                        ';
+                    } else {
+                        echo 
+                        '
+                            <form class="toggle-form" action="disable_link.php" method="post">
+                                <p>enable</p>
+                                <label class="switch">
+                                    <input name="checked" class="check" type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <input name="code" class="fake-input" type="text" value="'.$row['code'].'">
+                            </form>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            ';
+                    }
+}
         ?>
         <hr></hr>
     </div>
 </div>
+<script src="./js/manage_links.js"></script>
+
+<?php require_once("./tpl/footer.php"); ?>
