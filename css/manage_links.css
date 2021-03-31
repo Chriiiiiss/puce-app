@@ -14,7 +14,28 @@ hr {
     color:#FFFFFF;
     background: #E4572E;
     border-radius: 75px;
-    border: solid 2px #E4572E ;
+    border: solid 4px #E4572E ;
+}
+
+.add-link-button:hover{
+    color:#E4572E;
+    background: #FFFFFF;
+    transition: 0.4s;
+    transform: rotate(180deg);   
+}
+
+.popUp{
+    position: fixed;
+    width: 1051px;
+    height: 106px;
+    right: 8%;
+    bottom: 4%;
+    color:#FFFFFF;
+    background-image: url(../img/new_link.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: solid 2px #2B2D42; */
+    border-radius: 5px;
 }
 
 .category-titles

@@ -22,6 +22,22 @@
     <h1 class="title-text">Gérer mes liens</h1>
 </div>
 <button class="add-link-button">+</button>
+<div class="popUp">
+    <div class=section2>
+        <div class="form">
+            <form action="shortener.php" method="post">
+                    <?php 
+                        if (isset($_GET["Shortener"])) {
+                            echo '<input value="'.$redirect_link.$_GET["Shortener"].'" localhost" name="submit_url" type="url" class="input index_input shortened" placeholder="Collez votre lien pour le simplifier">';
+                        } else {
+                            echo '<input name="submit_url" type="url" class="input index_input" placeholder="Collez votre lien pour le simplifier">';
+                        }
+                    ?>
+                    <input type="submit" value="Simplifier" class="submit" disabled>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="container-links">
     <div class="category-titles">
         <p>
