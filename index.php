@@ -2,16 +2,22 @@
 <?php 
     $redirect_link = "localhost:8888/puce-app/"; 
     $code = '';
-    if (isset($_GET)) {
+    if (count($_GET) > 0) {
         foreach ($_GET as $key => $value) {
             $code = str_replace('/', '', $key);
         }
         require_once "connection_db.php";
         try {
             $url = $bdd->query("SELECT url FROM links WHERE code = '{$code}' AND activated = 1")->fetchColumn();
-            header("location: ".$url);
+            if ($url) {
+                header("location: ".$url);
+                exit;
+            } else {
+                header("location: error_doc.php");
+                exit;
+            }
         } catch (Exception $e) {
-            die("Erreur: ".$e->getMessage());
+            die("Error: ".$e);
         }
     }
 ?>
