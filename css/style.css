@@ -200,6 +200,11 @@ header .navbar .inscriptionNav:hover
     color: #aca9a9;
     outline: none;
 }
+
+.shortened {
+    color: var(--chocolate);
+}
+
 .submit
 {
     width: 270px;
@@ -215,6 +220,7 @@ header .navbar .inscriptionNav:hover
     font-weight: 600;
     font-size: 20px ;
 }
+
 .submit:hover
 {
     transition-duration: 0.40s;

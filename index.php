@@ -1,4 +1,5 @@
 <?php require_once("./tpl/header.php"); ?>
+<?php $redirect_link = "localhost:8888/puce-app/"; ?>
 
     <div class="container">
         <div class="section1">
@@ -22,7 +23,14 @@
         <div class=section2>
             <div class="form">
                 <form action="shortener.php" method="post">
-                    <input name="submit_url" type="url" class="input index_input" placeholder="Collez votre lien pour le simplifier">
+                    <?php 
+                        if (isset($_GET["Shortener"])) {
+                            echo '<input value="'.$redirect_link.$_GET["Shortener"].'" localhost" name="submit_url" type="url" class="input index_input shortened" placeholder="Collez votre lien pour le simplifier">';
+                        } else {
+                            echo '<input name="submit_url" type="url" class="input index_input" placeholder="Collez votre lien pour le simplifier">';
+                        }
+                    
+                    ?>
                     <input type="submit" value="Simplifier" class="submit" disabled>
                 </form>
                 <p class="accord">
@@ -84,6 +92,6 @@
                 ?>
             </div>
         </div>
-<script src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
 
 <?php require_once("./tpl/footer.php"); ?>
