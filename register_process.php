@@ -13,10 +13,6 @@ if(isset($_POST["password"])) {
     exit;
 }
 
-// function checkDb($bdd, $string) {
-//     $req = $bdd->
-// }
-
 $req = $bdd->prepare("INSERT INTO account_puce(username, password, email) VALUES(:username, :password, :email)");
 
 $req->bindValue(":username", $_POST["username"]);
