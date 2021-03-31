@@ -22,7 +22,7 @@
     <h1 class="title-text">Gérer mes liens</h1>
 </div>
 <button class="add-link-button">+</button>
-<div class="popUp "data-transition="slide-in fade-out">
+<div class="popUp">
     <div class=s>
         <div class="form">
             <form action="shortener.php" method="post">
@@ -54,9 +54,7 @@
         {
             popUp.style.display = ("none")
             tmp = 'true'
-        }
-       
-        
+        } 
     }
     button.addEventListener('click',linkButton)
     </script>

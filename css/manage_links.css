@@ -15,14 +15,19 @@ hr {
     background: #E4572E;
     border-radius: 75px;
     border: solid 4px #E4572E ;
+    outline:none;
+
 }
+
 
 .add-link-button:hover{
     color:#E4572E;
     background: #FFFFFF;
-    transition: 0.4s;
+    transition: 0.10s;
     transform: rotate(180deg);   
 }
+
+
 
 .popUp{
     position: fixed;
@@ -30,19 +35,21 @@ hr {
     height: 120px;
     right: 13%;
     bottom: 5%;
-    background-image: url(../img/new_link.png);
-    background-size: cover;
+    background-image: url(../img/new-link.png);
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 5px;
     display: none;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    transition: 0.4s;
 }
 
 .inputSmall{
-    width: 660px;
+    width: 640px;
     height: 47px;
     margin-right: 15px ;
+    margin-left: 20px;
     padding: 0 12px;
     border-radius: 5px;
     border: 2px solid #eeeeee;
@@ -57,10 +64,9 @@ hr {
 
 
 .submitSmall{
-    width: 270px;
+    width: 250px;
     height: 48px;
     margin-left: 15px ;
-    padding: 0 12px;
     border-radius: 5px;
     color: #FFFFFF;
     background: var(--medium-purple);
