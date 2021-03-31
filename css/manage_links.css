@@ -78,6 +78,7 @@ button .copy-link
 }
 
 .link-elem {
+    width: 90%;
     height: 512px;
     overflow: scroll;
 }

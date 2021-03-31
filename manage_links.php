@@ -2,9 +2,10 @@
     require_once "./tpl/header.php"; 
     require_once "connection_db.php";
     $redirect_link = "localhost:8888/puce-app/";
+    $user = $_SESSION['user'];
 
     try {
-        $req = $bdd->prepare("SELECT url, code, clicks, creation_date FROM links");
+        $req = $bdd->prepare("SELECT url, code, clicks, creation_date FROM links WHERE user = '{$user}'");
         $res = $req->execute();
         $res = $req->fetchAll();
         $links_number = count($res);
@@ -45,11 +46,13 @@
                             <div>
                                 <p class="date">'.get_date($row['creation_date']).'</p>
                                 <p class="long-link">'.$row['url'].'</p>
-                                <a href="http://'.$redirect_link.$row['code'].'"class="short-link">'.$redirect_link.$row['code'].'</p>
+                                <a href="http://'.$redirect_link.$row['code'].'"class="short-link" target="_blank">'.$redirect_link.$row['code'].'</a>
                             </div>
                             <div class="number-clicks">'.$row['clicks'].'</div>
                             <div class="actions">
-                                <img src="./img/garbage.png" class="garbage" alt="garbage can">
+                                <form action="delete_row.php" method="post"> 
+                                    <button type="submit" name="row_code" value="'.$row['code'].'" class="garbage">Delete</button>
+                                </form>
                                 <div class="copy-button">
                                     <a href="#" class="copy-link">copier</a>
                                     <button class="copy-link">copier</button>
