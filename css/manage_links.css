@@ -146,6 +146,14 @@ button .copy-link
     overflow: scroll;
 }
 
+.long-link
+{
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .link {
     height: 128px;
 }
@@ -282,25 +290,34 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 1180px) {
-    .long-link {
+    .long-link 
+    {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        width : 500px;
     }
-    .popUp{
+
+    .popUp
+    {
         width:860px;
         height: 100px;
         justify-content: center;
-
     }
-    .inputSmall{
+
+    .inputSmall
+    {
 
         width:370px;
     }
-    .submitSmall{
+
+    .submitSmall
+    {
         width:140px;
     }
-    .add-link-button{
+
+    .add-link-button
+    {
         width: 100px;
         height: 100px;
         font-size: 35px;
@@ -396,7 +413,7 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 375px) {
     .long-link {
-        width: 200px;
+        width: 170px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
