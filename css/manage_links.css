@@ -241,9 +241,6 @@ input:checked + .slider:before {
     width: 75vw;
     margin: 35px auto 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
     flex-direction: column;
 }
 
@@ -265,7 +262,6 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 1180px) {
     .long-link {
-        width: 400px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

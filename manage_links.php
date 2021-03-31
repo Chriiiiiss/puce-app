@@ -92,7 +92,6 @@
                     echo 
                     '
                         <form class="toggle-form" action="disable_link.php" method="post">
-                            <p>enable</p>
                             <label class="switch">
                                 <input name="checked" class="check" type="checkbox" checked>
                                 <span class="slider"></span>
@@ -108,7 +107,7 @@
                         echo 
                         '
                             <form class="toggle-form" action="disable_link.php" method="post">
-                                <p>enable</p>
+
                                 <label class="switch">
                                     <input name="checked" class="check" type="checkbox">
                                     <span class="slider"></span>
@@ -127,5 +126,3 @@
     </div>
 </div>
 <script src="./js/manage_links.js"></script>
-
-<?php require_once("./tpl/footer.php"); ?>
