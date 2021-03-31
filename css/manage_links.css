@@ -15,6 +15,7 @@ hr {
     background: #E4572E;
     border-radius: 75px;
     border: solid 2px #E4572E ;
+    outline: none;
 }
 
 .category-titles
@@ -201,6 +202,10 @@ input:checked + .slider:before {
 .toggle-form {
     display: flex;
     align-items: center;
+}
+
+.fake-input {
+    display: none;
 }
 
 @media only screen and (max-width: 1180px) {
