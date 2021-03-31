@@ -67,7 +67,6 @@
                                     <button type="submit" name="row_code" value="'.$row['code'].'" class="garbage"></button>
                                 </form>
                                 <form class="toggle-form" action="disable_link.php" method="post">
-                                <p>enable</p>
                                     <label class="switch">
                                         <input type="checkbox">
                                         <span class="slider"></span>
@@ -83,5 +82,3 @@
         <hr></hr>
     </div>
 </div>
-
-<?php require_once("./tpl/footer.php"); ?>
