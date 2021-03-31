@@ -20,7 +20,7 @@ if(isset($_POST["password"])) {
 $req = $bdd->prepare("INSERT INTO account_puce(username, password, email) VALUES(:username, :password, :email)");
 
 $req->bindValue(":username", $_POST["username"]);
-$req->bindValue(":password", $_POST["password"]);
+$req->bindValue(":password", password_hash($_POST["password"], PASSWORD_DEFAULT));
 $req->bindValue(":email", $_POST["email"]);
 if($req->execute()) {
     header("location:index.php?Welcome = Bienvenu");

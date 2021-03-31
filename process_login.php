@@ -9,7 +9,7 @@ if(isset($_POST["password"]) && isset($_POST["username"])) {
     $req->execute(array($_POST["username"]));
     $row = $req->fetch();
     if($row) {
-        if ($row["password"] != $_POST["password"]) {
+        if (!password_verify($_POST["password"], $row["password"])) {
             header("location:login.php?Error= Nom d'utilisateur / e-mail ou mot de passe incorrect");
         } else {
             $_SESSION["user"] = $_POST["username"];
