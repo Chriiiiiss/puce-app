@@ -1,5 +1,20 @@
 <?php require_once("./tpl/header.php"); ?>
-<?php $redirect_link = "localhost:8888/puce-app/"; ?>
+<?php 
+    $redirect_link = "localhost:8888/puce-app/"; 
+    $code = '';
+    if (isset($_GET)) {
+        foreach ($_GET as $key => $value) {
+            $code = str_replace('/', '', $key);
+        }
+        require_once "connection_db.php";
+        try {
+            $url = $bdd->query("SELECT url FROM links WHERE code = '{$code}'")->fetchColumn();
+            header("location: ".$url);
+        } catch (Exception $e) {
+            die("Erreur: ".$e->getMessage());
+        }
+    }
+?>
 
     <div class="container">
         <div class="section1">

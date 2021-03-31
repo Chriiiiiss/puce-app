@@ -13,7 +13,7 @@
         $req->bindValue(":url", $_POST['submit_url']);
         $req->bindValue(":code", $url_code);
         if ($req->execute()) {
-            header("location:index.php?Shortener= ".$url_code);
+            header("location:index.php?Shortener=".$url_code);
         } else {
             // header("location:index.php?Error= something gone wrong");
         }
