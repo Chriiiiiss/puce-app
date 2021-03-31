@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="images/rectangle.png" class="rectangle" alt="ligne de séparation">
+                <img src="./img/rectangle.png" class="rectangle" alt="ligne de séparation">
                 <p class="footerText"> 
                     Puce © 2021 - Tous droits réservés ®
                 </p>
