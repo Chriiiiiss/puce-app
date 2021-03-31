@@ -8,7 +8,7 @@
         }
         require_once "connection_db.php";
         try {
-            $url = $bdd->query("SELECT url FROM links WHERE code = '{$code}'")->fetchColumn();
+            $url = $bdd->query("SELECT url FROM links WHERE code = '{$code}' AND activated = 1")->fetchColumn();
             header("location: ".$url);
         } catch (Exception $e) {
             die("Erreur: ".$e->getMessage());
