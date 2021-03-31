@@ -6,6 +6,7 @@
     $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     $code_len = 6;
     $url_code = generate_code($chars, $code_len);
+    var_dump($_POST);
 
     if (isset($_SESSION['user'])) {
         $req = $bdd->prepare("INSERT INTO links(user, url, code) VALUES(:user, :url, :code)");
@@ -23,8 +24,10 @@
         $req->bindValue(":code", $url_code);
         if ($req->execute()) {
             header("location:index.php?Shortener=".$url_code);
+            exit;
         } else {
             header("location:index.php?Error= something gone wrong");
+            exit;
         }
     }
     

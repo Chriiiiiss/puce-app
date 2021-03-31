@@ -2,7 +2,8 @@
 <?php 
     $redirect_link = "localhost:8888/puce-app/"; 
     $code = '';
-    if (count($_GET) > 0) {
+    // var_dump(!isset($_GET["Shortener"]) && !isset($_GET["Error"]));
+    if (count($_GET) > 0 && (!isset($_GET["Shortener"]) && !isset($_GET["Error"]))) {
         foreach ($_GET as $key => $value) {
             $code = str_replace('/', '', $key);
         }

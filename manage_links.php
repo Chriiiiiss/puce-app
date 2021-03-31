@@ -3,6 +3,7 @@
     require_once "connection_db.php";
     $redirect_link = "localhost:8888/puce-app/";
     $user = $_SESSION['user'];
+    $i = 0;
 
     try {
         $req = $bdd->prepare("SELECT url, code, clicks, creation_date, activated FROM links WHERE user = '{$user}'");
@@ -33,7 +34,7 @@
                             echo '<input name="submit_url" type="url" class="inputSmall index_input" placeholder="Collez votre lien pour le simplifier">';
                         }
                     ?>
-                    <input type="submit" value="Simplifier" class="submitSmall">
+                    <input type="submit" name="manage" value="Simplifier" class="submitSmall">
             </form>
         </div>
     </div>
@@ -72,7 +73,7 @@
                     '
                         <form class="toggle-form" action="disable_link.php" method="post">
                             <label class="switch">
-                                <input name="checked" class="check" type="checkbox" checked>
+                                <input name="checked" class="check" type="checkbox" data-index-number="'.$i.'" checked>
                                 <span class="slider"></span>
                             </label>
                             <input name="code" class="fake-input" type="text" value="'.$row['code'].'">
@@ -88,7 +89,7 @@
                             <form class="toggle-form" action="disable_link.php" method="post">
 
                                 <label class="switch">
-                                    <input name="checked" class="check" type="checkbox">
+                                    <input name="checked" class="check" type="checkbox" data-index-number="'.$i.'">
                                     <span class="slider"></span>
                                 </label>
                                 <input name="code" class="fake-input" type="text" value="'.$row['code'].'">
@@ -99,6 +100,7 @@
                             </div>
                             ';
                     }
+                $i += 1;
 }
         ?>
         <hr></hr>
