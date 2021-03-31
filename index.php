@@ -92,8 +92,9 @@
                         '
                         <h4></h4>
                         <div class="inscriptionButton">
-                            <a href="./manage_links.php" class="purpleButton">Gérer mes liens</a>
+                        <a href="./manage_links.php" class="purpleButton">Gérer mes liens</a>
                         </div>
+  
                         ';
                     } else {
                         echo 
