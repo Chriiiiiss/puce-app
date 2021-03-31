@@ -266,6 +266,25 @@ input:checked + .slider:before {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .popUp{
+        width:860px;
+        height: 120px;
+        justify-content: center;
+
+    }
+    .inputSmall{
+
+        width:370px;
+    }
+    .submitSmall{
+        width:140px;
+    }
+    .add-link-button{
+        width: 100px;
+        height: 100px;
+        font-size: 35px;
+    }
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -286,6 +305,26 @@ input:checked + .slider:before {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .popUp{
+        width:600px;
+        height: 120px;
+        background-color: #2B2D42;
+    }
+    .inputSmall{
+
+        width:400px;
+        height: 40px;
+    }
+    .submitSmall{
+        margin-top: 20px;
+        width:150px;
+        height: 40px;
+    }
+    .add-link-button{
+        width: 100px;
+        height: 100px;
+        font-size: 35px;
     }
 }
 
@@ -330,4 +369,24 @@ input:checked + .slider:before {
     .long-link {
         width: 200px;
     }
+
+    .add-link-button{
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    .popUp{
+        width:500px;
+        height: 120px;
+    }
+    .inputSmall{
+        width:300px;
+        height: 40px;
+    }
+    .submitSmall{
+        width:100px;
+        height: 40px;
+    }
+    
+
 }
