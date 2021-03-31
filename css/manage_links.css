@@ -1,3 +1,8 @@
+hr {
+    margin: 0;
+}
+
+
 .add-link-button
 {
     position: fixed;
@@ -28,6 +33,7 @@
 
 .link-made .date
 {
+    margin: 17.5px auto 10px auto;
     font-size: 15px;
     opacity: 50%;
 }
@@ -41,6 +47,7 @@
 .link-made .short-link
 {
     font-size: 15px;
+    margin: 10px auto 17.5px auto ;
     color: #9B7EDE;
 }
 
@@ -68,4 +75,13 @@ button .copy-link
 .copy-button a
 {
     color: #E4572E;
+}
+
+.link-elem {
+    height: 512px;
+    overflow: scroll;
+}
+
+.link {
+    height: 128px;
 }
