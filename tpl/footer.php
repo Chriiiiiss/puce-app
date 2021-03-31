@@ -4,12 +4,12 @@
         <div class="footerLinks">
             <img src="img/logo-white.png" class="logoW" alt="logo puce blanc">
             <ul>
-                <li><p class="contact">Contact</p></li>
+                <li><p class="heavy">Contact</p></li>
                 <li><p class="number">01 72 03 94 05</p></li>
                 <li><p class="number">Luce.Michu@puce.org</p></li>
             </ul>
             <div class="footerLogo">
-                <p class="social">Nos reseaux</p>
+                <p class="heavy">Nos reseaux</p>
                 <div class="logoSocial">
                     <a href="https://www.facebook.com/">
                         <img src="./img/logoF.png" class="logoF" alt="logo Facebook">
