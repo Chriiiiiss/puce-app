@@ -41,7 +41,7 @@ $id_session = session_id();
                                 echo 
                                 '
                                 <div id="hamitems">
-                                    <a href="logout.php" class="logIn">Deconnexion</a>
+                                    <a href="logout.php" class="logIn">Déconnexion</a>
                                     <a href="#" class="profilePic">
                                         <img src="img/profilePic.png" >
                                     </a>

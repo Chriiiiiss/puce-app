@@ -38,27 +38,6 @@
         </div>
     </div>
 </div>
-    <script>;
-    const button = document.querySelector('.add-link-button');
-    const popUp = document.querySelector('.popUp');
-    let tmp = true
-
-    const linkButton = () => 
-    {
-        if (tmp =="true")
-        {
-            popUp.style.display = ("flex")
-            tmp = 'false'
-        }
-        else
-        {
-            popUp.style.display = ("none")
-            tmp = 'true'
-        } 
-    }
-    button.addEventListener('click',linkButton)
-    </script>
-
 <div class="container-links">
     <div class="category-titles">
         <p>
@@ -92,7 +71,6 @@
                     echo 
                     '
                         <form class="toggle-form" action="disable_link.php" method="post">
-                            <p>enable</p>
                             <label class="switch">
                                 <input name="checked" class="check" type="checkbox" checked>
                                 <span class="slider"></span>
@@ -108,7 +86,7 @@
                         echo 
                         '
                             <form class="toggle-form" action="disable_link.php" method="post">
-                                <p>enable</p>
+
                                 <label class="switch">
                                     <input name="checked" class="check" type="checkbox">
                                     <span class="slider"></span>
@@ -127,5 +105,3 @@
     </div>
 </div>
 <script src="./js/manage_links.js"></script>
-
-<?php require_once("./tpl/footer.php"); ?>
