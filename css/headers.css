@@ -58,13 +58,72 @@ body{
     background-color: var(--transparent-dark-slate-gray);
 }
 
+header .navbar .logo
+{   
+    width: 130px;
+}
 
 
- 
- 
+header .navbar a
+{  
+    margin:0px 15px;
+}
+
+header .navbar .links
+{   display: flex;
+    justify-content: flex-end;
+    margin:4px
+}
+
+
+header .navbar .logIn
+{
+    color: var(--chocolate);
+}
+header .navbar .logIn:hover
+{
+    letter-spacing: 0.1em;
+    font-family: FuturaPTDemi;
+    color:var(--medium-purple);
+    transition-duration: 0.60s;
+}
+
+
+.profilePic img 
+{
+    width: 45px;
+
+}
+
+header .navbar .inscriptionNav
+{
+    border: solid 2px #FFFFFF;
+    background: var(--chocolate);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding:10px 18px;
+}
+header .navbar .inscriptionNav:hover
+{
+    background:#FFFFFF;
+    color: var(--chocolate);
+    border: solid 2px var(--chocolate);
+    border-radius: 5px;
+    padding:10px 18px;
+    transition-duration: 0.40s;
+}
+
+
+
+
+
   #hamnav label, #hamburger { display: none; }
   
-
+  @media screen and (min-width: 768px){
+      .myprofile{
+          display: none;
+      }
+  }
 
   @media screen and (max-width: 768px){
 
@@ -81,7 +140,7 @@ body{
         padding:0px;
         border: none;
     }
-    header .navbar .connexion:hover
+    header .navbar .logInion:hover
     {
         letter-spacing: 0.05em;
         font-family:FuturaPTBook;
@@ -97,18 +156,19 @@ body{
         transition-duration: 0.40s;
     }
     #hamnav{
-
         display: flex;
         flex-direction: row-reverse;
-
     }
-
 
     #hamitems a {
       box-sizing: border-box;
       display: block;
       width: 100%;
-
+      margin: 10px;
+    }
+    .profilePic img
+    {
+        display: none;
     }
   
     /* Toggle Show/Hide Menu */
