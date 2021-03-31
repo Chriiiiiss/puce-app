@@ -17,6 +17,7 @@ if(isset($_SESSION['user'])) {
         <link rel="stylesheet" href="./css/headers.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/register.css">
+        <link rel="stylesheet" href="./css/manage_links.css">
         <link href="font/FuturaPTBook.otf">
         <link href="font/FuturaPTDemi.otf">
     </head>

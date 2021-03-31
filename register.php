@@ -41,7 +41,7 @@
         </div>
         <div class="form-item">
             <button class="login-button">Créer mon compte</button>
-            <p>En créant un compte, vous accepter les conditions d’utilisation<br>et la politique de confidentialité.</p>
+            <p>En créant un compte, vous accepter les conditions d’utilisation et la politique de confidentialité.</p>
         </div>
     </form>
 </div>

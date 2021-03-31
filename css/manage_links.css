@@ -1,0 +1,59 @@
+.add-link-button
+{
+    position: fixed;
+    width: 15vh;
+    height: 15vh;
+    right: 5%;
+    bottom: 5%;
+    font-size: 5vh;
+}
+
+.category-titles
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-titles p
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.link-made
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-made .date
+{
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.link-made .long-link
+{
+    font-size: 25px;
+    margin: 0;
+}
+
+.link-made .short-link
+{
+    font-size: 15px;
+    color: #9B7EDE;
+}
+
+.link-made .number-clicks
+{
+    font-size: 35px;
+    color: #E4572E;
+}
+
+button .copy-link
+{
+    background-color: #fff;
+    border: 3px solid #E4572E;
+    font-size: 20px;
+    color: #E4572E;
+}
