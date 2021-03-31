@@ -34,7 +34,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
