@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_error', 1);
 require_once "connection_db.php";
 
 
@@ -18,12 +18,19 @@ $req = $bdd->prepare("INSERT INTO account_puce(username, password, email) VALUES
 $req->bindValue(":username", $_POST["username"]);
 $req->bindValue(":password", password_hash($_POST["password"], PASSWORD_DEFAULT));
 $req->bindValue(":email", $_POST["email"]);
-if($req->execute()) {
-    header("location:index.php?Welcome = Bienvenu");
+try {
+    $req->execute();
+    header("location:index.php");
     exit;
-} else {
+} catch (Exception $e) {
     header("location:register.php?Error= Nom d'utilisateur ou e-mail déjà existant !");
 }
+// if($req->execute()) {
+//     // header("location:index.php");
+//     exit;
+// } else {
+// //     header("location:register.php?Error= Nom d'utilisateur ou e-mail déjà existant !");
+// }
 
 
 
