@@ -29,7 +29,6 @@ if(isset($_SESSION['user'])) {
                     </a>
                     <ul class=links>
                     <nav id="hamnav">
-                            <!-- [THE HAMBURGER] -->
                             <label for="hamburger">&#9776;</label>
                             <input type="checkbox" id="hamburger"/>
                         <?php 
@@ -37,17 +36,18 @@ if(isset($_SESSION['user'])) {
                                 echo 
                                 '
                                 <div id="hamitems">
-                                    <a href="logout.php" class="connexion">Deconnexion</a>
+                                    <a href="logout.php" class="logIn">Deconnexion</a>
                                     <a href="#" class="profilePic">
                                         <img src="img/profilePic.png" >
                                     </a>
-                                </div>
+                                    <a href="#" class="logIn myprofile">Mon Profil</a>
+                                    </div>
                                 ';
                             } else {
                                 echo 
                                 '
                                 <div id="hamitems">
-                                    <a href="login.php" class="connexion">Connexion</a>
+                                    <a href="login.php" class="logIn">Connexion</a>
                                    <a href="register.php" class="inscriptionNav">Inscription</a>
                                 </div>
                                 ';

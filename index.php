@@ -24,7 +24,7 @@
                 <div class="inscriptionButton">
                     <?php 
                         if (isset($_SESSION['user'])) {
-                            echo "<a href='#' class='inscription'>Mes statistiques</a>";
+                            echo "<a href='#' class='purpleButton'>Gérer mes liens</a>";
                         } else {
                             echo "<a href='./register.php' class='inscription'>Inscription</a>";
                         }
@@ -90,6 +90,7 @@
                     if (isset($_SESSION['user'])) {
                         echo 
                         '
+                        <h4></h4>
                         <div class="inscriptionButton">
                             <a href="#" class="purpleButton">Gérer mes liens</a>
                         </div>
