@@ -22,6 +22,43 @@
     <h1 class="title-text">Gérer mes liens</h1>
 </div>
 <button class="add-link-button">+</button>
+<div class="popUp">
+    <div class=s>
+        <div class="form">
+            <form action="shortener.php" method="post">
+                    <?php 
+                        if (isset($_GET["Shortener"])) {
+                            echo '<input value="'.$redirect_link.$_GET["Shortener"].'" localhost" name="submit_url" type="url" class="inputSmall index_input shortened" placeholder="Collez votre lien pour le simplifier">';
+                        } else {
+                            echo '<input name="submit_url" type="url" class="inputSmall index_input" placeholder="Collez votre lien pour le simplifier">';
+                        }
+                    ?>
+                    <input type="submit" value="Simplifier" class="submitSmall">
+            </form>
+        </div>
+    </div>
+</div>
+    <script>;
+    const button = document.querySelector('.add-link-button');
+    const popUp = document.querySelector('.popUp');
+    let tmp = true
+
+    const linkButton = () => 
+    {
+        if (tmp =="true")
+        {
+            popUp.style.display = ("flex")
+            tmp = 'false'
+        }
+        else
+        {
+            popUp.style.display = ("none")
+            tmp = 'true'
+        } 
+    }
+    button.addEventListener('click',linkButton)
+    </script>
+
 <div class="container-links">
     <div class="category-titles">
         <p>

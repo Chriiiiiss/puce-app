@@ -180,7 +180,7 @@ a
     transition-duration: 0.40s;
     color: var(--medium-purple);
     background: #FFFFFF;
-    border: 2px solid #eba6a6;
+    border: 2px solid var(--medium-purple);
 }
 
 .accord

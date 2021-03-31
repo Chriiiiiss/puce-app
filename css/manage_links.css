@@ -6,22 +6,76 @@ hr {
 .add-link-button
 {
     position: fixed;
-    width: 14vh;
-    height: 14vh;
+    width: 130px;
+    height: 130px;
     right: 5%;
     bottom: 5%;
-    font-size: 6vh;
+    font-size: 50px;
     color:#FFFFFF;
     background: #E4572E;
     border-radius: 75px;
-    border: solid 2px #E4572E ;
+    border: solid 4px #E4572E ;
+    outline:none;
+
+}
+
+
+.add-link-button:hover{
+    color:#E4572E;
+    background: #FFFFFF;
+    transition: 0.10s;
+    transform: rotate(180deg);   
+}
+
+
+
+.popUp{
+    position: fixed;
+    width: 1060px;
+    height: 120px;
+    right: 13%;
+    bottom: 5%;
+    background-image: url(../img/new-link.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.inputSmall{
+    width: 640px;
+    height: 47px;
+    margin-right: 15px ;
+    margin-left: 20px;
+    padding: 0 12px;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+    text-align:start;
+    font-family:  FuturaPTBook;
+    letter-spacing: 0.05em;
+    font-size: 20px ;
+    font-weight: 300;
+    color: #aca9a9;
     outline: none;
 }
 
-.category-titles
-{
-    display: flex;
-    justify-content: space-between;
+
+.submitSmall{
+    width: 250px;
+    height: 48px;
+    margin-left: 15px ;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: var(--medium-purple);
+    border: 2px solid var(--medium-purple);
+    text-align: center;
+    font-family:  FuturaPTBook;
+    font-weight: 600;
+    font-size: 20px ;
+
 }
 
 .category-titles p
@@ -141,6 +195,7 @@ button .copy-link
     -webkit-transition: .4s;
     border-radius: 34px;
     transition: .4s;
+    z-index: -999;
 }
 
 .slider:before {

@@ -121,6 +121,11 @@ header .navbar .inscriptionNav:hover
     align-items: center;
 }
 
+.navbar ul.links p
+{
+    margin-right: 10px;
+}
+
 .username {
     color: var(--chocolate);
     font-weight: bold;
