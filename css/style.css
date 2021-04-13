@@ -271,11 +271,22 @@ a
     transition-duration: 0.40s;
 }
 
+/********
+
+Menu hamburger
+
+********/
 #hamitems 
 {
     display: flex;
     align-items: center;
 }
+
+/********
+
+Error page
+
+********/
 
 .error-404-container {
     width: 100%;
@@ -294,6 +305,14 @@ a
     color: #E4572E;
     text-align: center;
 }
+
+
+/********
+
+responsive stuff
+
+********/
+
 
 @media only screen and (min-width: 720px) {
 
